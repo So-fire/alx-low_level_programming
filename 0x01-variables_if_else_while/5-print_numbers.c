@@ -8,17 +8,12 @@
  */
 int main(void)
 {
-	char alphabet;
+	int digits;
 
-	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
-	{
-		if (alphabet != 'e' && alphabet != 'q')
-		{
-			putchar(alphabet);
-		}
-	}
+	for (digits = 0; digits < 10; digits++)
+		printf("%d", digits);
 
-	putchar('\n');
+	printf("\n");
 
 	return (0);
 }
