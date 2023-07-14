@@ -2,7 +2,7 @@
 /**
  * main -  Beginning
  *
- * Return: end of code 0
+ * Return: End of code 0
  */
 int main(void)
 {
