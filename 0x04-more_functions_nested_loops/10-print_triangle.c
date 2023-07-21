@@ -4,7 +4,7 @@
  */
 
 /**
- * print _triangle - This is for triangle size
+ * print_triangle - This is for triangle size
  * @size: This refers to the siz of triangle
  *
  * Return: 1 if the uppercase c else return 0.
