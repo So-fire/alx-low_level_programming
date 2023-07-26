@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-* is_sep - check char seperator.
-* @s: the char to test. 
+* is_seperator - check char.
+* @s: the char
 *
-* Return: always 0
+* Return: 0
 */
-int is_sep(char s)
+int is_seperator(char s)
 {
 	char count[] = {'\t', '\n', ' ', ',', ';', '!',
 		      '.', '?', '\"', '(', ')', '{', '}'};
@@ -22,7 +22,7 @@ int is_sep(char s)
 
 /**
 * cap_string - This writes string in  capital letters
-* @s: sring for use
+* @s: string for use
 *
 * Return: always 0
 */
@@ -41,7 +41,7 @@ char *cap_string(char *s)
 			s[number] -= 32;
 			count = 0;
 		}
-		count = is_sep(s[number]);
+		count = is_seperator(s[number]);
 		number++;
 }
 	return (s);
