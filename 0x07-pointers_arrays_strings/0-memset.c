@@ -1,22 +1,22 @@
 #include "main.h"
 /**
- * _memset - constant byte memory.
- * @b: byte.
- * @no: byte number.
- * @p: pointer
+ * _memset - this funtion fills memory with a constant byte.
+ * @b: a constant byte.
+ * @n: number of bytes.
+ * @s: pointers to memory.
  *
- * Return: A pointer to memory area p.
+ * Return: A pointer to memory area s.
  */
-char *_memset(char *p, char b, unsigned int no)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int num;
 
 	num = 0;
-	while (num < no)
+	while (num < n)
 	{
-		p[num] = b;
+		s[num] = b;
 		num++;
 	}
 
-	return (p);
+	return (s);
 }
