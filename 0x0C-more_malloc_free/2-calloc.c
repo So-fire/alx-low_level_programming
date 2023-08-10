@@ -1,43 +1,29 @@
+#include "main.h"
+#include <stdlib.h>
+
 /**
- * *_memset - memory
+ * *_calloc - memory
  * @t: memory area
  * @a: char
- * @n: number
  *
  * Return: pointer to the memory area t
  */
-char *_memset(char *t, char a, unsigned int n)
+void *_calloc(unsigned int t, unsigned int a)
 {
+	char *p;
 	unsigned int i;
 
-	for (i = 0; i < n; i++)
-	{
-		t[i] = a;
-	}
-
-	return (t);
-}
-
-/**
- * *_calloc - memory for array
- * @nmemb: elements
- * @size: size
- *
- * Return: pointer
- */
-void *_calloc(unsigned int nmemb, unsigned int size)
-{
-	char *ptr;
-
-	if (nmemb == 0 || size == 0)
+	if (t == 0 || a == 0)
 		return (NULL);
 
-	ptr = malloc(size * nmemb);
+	p = malloc(t * a);
 
-	if (ptr == NULL)
+	if (p == NULL)
 		return (NULL);
 
-	_memset(ptr, 0, nmemb * size);
+	for (i = 0; i < (t * a); i++)
+		p[i] = 0;
 
-	return (ptr);
+	return (p);
 }
+
